@@ -1,0 +1,26 @@
+<main>
+  <!-- ingresar lista de tareas -->
+  <section>
+    <article class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Tareas:</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ingrese Tarea" name="tarea" [(ngModel)]="tarea">
+    </article>
+    <article class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Descripción:</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="descripcion" [(ngModel)]="descripcion"></textarea>
+      <button class="btn btn-primary" (click)="Agregar()" [disabled]="habilitar()">Agregar</button>
+    </article>
+  </section>
+  <!-- listado de tareas -->
+  <article class="list-container">
+    <p>Lista de tareas</p>
+    <section>
+      <ul *ngFor="let fila of lista; let i = index in lista">
+        <li>{{fila.tarea}} :</li>
+        <p>{{fila.descripcion}}</p>
+        <button class="btn btn-danger" value={{i}} (click)="Eliminar(i)" >Delete</button>
+      </ul>
+    </section>
+  </article>
+</main>
+

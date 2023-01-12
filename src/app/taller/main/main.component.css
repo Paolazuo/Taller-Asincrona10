@@ -1,0 +1,36 @@
+main{
+  height: 80vh;
+  display:flex;
+  gap: 60px;
+  padding: 6% 2% 0% 30%;
+  background: rgb(236, 223, 188);
+  color: rgb(7, 7, 8);
+}
+.list-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(6, 6, 6);
+  background: rgb(238, 232, 232);
+  width: 60%;
+  height: 300px;
+  color: rgb(12, 11, 11);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+ul{
+  display: flex;
+  gap:20px;
+  color: rgb(14, 11, 11);
+  margin-bottom: 10px;
+}
+.mb-3{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+}
+.mb-3 button{
+  width:50%;
+}
